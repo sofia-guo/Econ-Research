@@ -1,2 +1,2 @@
 # Econ-Research
-Repository of Economics Papers I've contributed to or written
+Repository of economics papers and code I've contributed to and/or written.
