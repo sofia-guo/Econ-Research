@@ -1,0 +1,20 @@
+---
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+library(stargazer)
+
+source('C:\\Users\\sofia\\Box\\Cal (sofiaguo@berkeley.edu)\\2018-19\\Econ 140\\Term Project\\Econ 140 Project Regression.R')
+```
+
+```{r,results='asis'}
+
+stargazer(State_FE, State_FE_robust, title = "Regression Results", type = 'latex', omit = c('State', 'Year'), header = F, column.labels = c('OLS','Robust SE'))
+
+```
+
+*Table omits results for state and time fixed effects.
+\newline
+*'Post' variable = 0 for 2008-2009, 1 for 2010-2012
